@@ -54,7 +54,7 @@ setInterval(() => tagItemsAfterHeading('Who to follow', 'hide'), 500);
 setInterval(() => tagItemsAfterHeading('Creators for you', 'hide'), 500);
 setInterval(attachClasses, 1500);
 
-const customStyles = /*css*/`
+const customStyles = /*css*/ `
   /* Hide Verified Tab */
   div:has(> a[role="tab"][href*="verified"]) {
     display: none;
@@ -63,6 +63,11 @@ const customStyles = /*css*/`
   .discover-more,
   .hide {
     opacity: 0.1;
+  }
+
+  /* Remove Chirp Font */
+  * {
+     font-family: system-ui !important;
   }
 `;
 
