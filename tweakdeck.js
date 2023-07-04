@@ -14,8 +14,9 @@ async function attachClasses() {
   });
 }
 
-function selectElementsByText(searchText) {
-  const xpathSelector = `//*[contains(text(), "${searchText}")]`;
+function selectElementsByText(searchText, matches) {
+  // const xpathSelector = `//*[contains(text(), "${searchText}")]`;
+  const xpathSelector = `//*[text() = "${searchText}"]`;
   const matchingElements = document.evaluate(
     xpathSelector,
     document,
