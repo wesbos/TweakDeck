@@ -69,6 +69,10 @@ const customStyles = /*css*/ `
   * {
      font-family: system-ui !important;
   }
+  /* Thin Scrollbars */
+  .tweakdeck-column :is([data-viewportview="true"]) {
+    scrollbar-width: thin;
+  }
 `;
 
 const style = document.createElement('style');
