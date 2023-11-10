@@ -73,6 +73,10 @@ const customStyles = /*css*/ `
   .tweakdeck-column :is([data-viewportview="true"]) {
     scrollbar-width: thin;
   }
+  /* Spacing for DMs */
+  .tweakdeck-column:has([data-testid*="DmActivityViewport"]) {
+      margin-bottom: 30px;
+  }
 `;
 
 const style = document.createElement('style');
